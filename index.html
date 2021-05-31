@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Candy Crush</title>
+	<link rel="stylesheet" type="text/css" href="candy.css">
+</head>
+<body>
+<div class="container">
+	<!-- starting tiitle page -->
+	<div class="startContainer">
+		<div class="startMessage">Welcome TO Candy Land</div>
+		<div class="startButton">Start</div>
+		<div class="instructionButton">Instructions</div>
+		<div class="animateCandy1">
+			<div class="candy1"></div>
+			<div class="candy2"></div>
+			<div class="candy3"></div>
+			<div class="candy4"></div>
+		</div>
+		<div class="animateCandy2"></div>
+	</div>
+
+<!-- after pressing start button -->
+	<div class="start">
+		<!-- where character moves -->
+		<div class="gameArea">
+			<div id="character">
+				<!-- <img src="mouth.jpg" class="characterImage"> -->
+			</div>
+		</div>
+
+		<!-- where score is displayed -->
+		<div class="gameScore">
+			<!-- life -->
+			<div class="life">
+				<div class="lifeText">Life</div>
+				<div class="lifeCount">
+					<div id="life1"><img src="heart.png" class="lifeImage"></div>
+					<div id="life2"><img src="heart.png" class="lifeImage"></div>
+					<div id="life3"><img src="heart.png" class="lifeImage"></div>
+				</div>
+			</div>
+			<!-- score -->
+			<div class="score">
+				<div class="scoreText">Score: </div>
+				<div class="scoreValue">0</div>
+			</div>
+			<!-- level -->
+			<div class="level">
+				<div class="levelText">Level :</div>
+				<div class="levelValue">1</div>
+			</div>
+			<div class="gameName">Candy Land</div>
+		</div> <!-- end og game score -->
+	</div> <!-- end of start -->
+
+<!-- after pressing instructon button -->
+	<div class="instructionPopUp">
+		<h1 class="instructionHeading">Welcome To Candy Land</h1>
+		<p class="instructionDetails">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+	</div>
+
+<!-- close button on top -->
+		<div class="closeButton">X</div>
+</div>
+
+<script type="text/javascript" src="candy.js"></script>
+</body>
+</html>

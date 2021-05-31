@@ -1,0 +1,329 @@
+*{
+	box-sizing: border-box;/*padding and border will be applied to the height and width of the element */
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-color: #0c2461;
+	border: 0.3rem solid green;
+}
+
+.startContainer{
+	position: absolute;
+	width: 65rem;
+	height: 25rem;
+	top: 5rem;
+	left: 10rem;
+	/*background-color: #8c7ae6;*/
+	border: 1px solid black;
+}
+
+.startMessage{
+	position: absolute;
+	width: 65rem;
+	height: 6rem;
+	/*background-color: #8c7ae6;*/
+	/*left: 1rem;*/
+	font-size: 5.8rem;
+	color: #FFC312;
+	font-weight: bold;
+	border: 1px solid black;
+}
+
+.startButton{
+	position: absolute;
+	width: 13rem;
+	height: 6rem;
+	top: 8.5rem;
+	left : 25rem;
+	background-color: #d35400;
+	font-size: 4rem;
+	padding-left: 2.5rem;
+	border: 0.4rem solid orange;
+	border-radius: 3rem;
+}
+
+.instructionButton{
+	position: absolute;
+	width: 21.5rem;
+	height: 6rem;
+	top: 16.5rem;
+	left : 21rem;
+	background-color: #d35400;
+	font-size: 4rem;
+	padding-left: 1rem;
+	border: 0.4rem solid orange;
+	border-radius: 3rem;	
+}
+
+.animateCandy1{
+	width: 15rem;
+	height: 12rem;
+	position: absolute;
+	top: 10rem;
+	left: 3rem;
+	border: 1px solid black;
+}
+
+.animateCandy2{
+	width: 15rem;
+	height: 12rem;
+	position: absolute;
+	top: 10rem;
+	left: 46rem;
+	border: 1px solid black;
+}
+
+.candy1{
+	width: 2rem;
+	height: 2rem;
+	left: 1rem;
+	top: 2rem;
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 50%;
+	background-color: red;
+
+}
+
+.candy2{
+	width: 3rem;
+	height: 2rem;
+	position: absolute;
+	left: 4rem;
+	top: .5rem;
+	border: 1px solid black;
+	border-radius: 2rem;
+
+}
+.candy3{
+	width: 1.7rem;
+	height: 3.5rem;
+	left: 8rem;
+	top: 2rem;
+	position: absolute;
+	border: 1px solid black;
+
+}
+.candy4{
+	width: 2rem;
+	height: 2rem;
+	left: 11rem;
+	top: 1rem;
+	position: absolute;
+	border: 1px solid black;
+
+}
+
+/*start is game pop up*/
+.start{
+	width: 60rem;
+	height: 33rem;
+	position: absolute;
+	background-color: white;
+	top: 3rem;
+	left: 11rem;
+	background-color: #ffb276;
+	border-radius: 2rem;
+	/*display: none;*/
+}
+
+/*instruction pop up*/
+.instructionPopUp{
+	width: 60rem;
+	height: 33rem;
+	position: absolute;
+	background-color: white;
+	top: 3rem;
+	left: 11rem;
+	background-color: #ffb276;
+	border-radius: 2rem;
+	display: none;
+}
+.instructionHeading{
+	position: absolute;
+	font-size: 5rem;
+	left: 2rem;
+	color: #0c2461;
+}
+.instructionDetails{
+	position: absolute;
+	font-size: 2.5rem;
+	left: 2rem;
+	top: 5rem;
+}
+
+/*close button*/
+.closeButton{
+	width: 3rem;
+	height: 3rem;
+	position: absolute;
+	top: 2rem;
+	left: 69rem;
+	border: 1px solid black;
+	border-radius: 3rem;
+	background-color: #dd2900;
+	font-size: 2rem;
+	padding-left: .6rem;
+	padding-top: .3rem;
+	color: white;
+	font-family: "Lucida Handwriting";
+	/*display: none;*/
+
+}
+
+/*gamearea : where game is to be played. character is there*/
+.gameArea{
+	width: calc((78/100*60rem));
+	height: 33rem;
+	position: absolute;
+	border-right: 1px solid red;
+	/*border: 2px solid green;*/
+	/*background-color: white;*/
+}
+
+/*character*/
+#character{
+	width: 5rem;
+	height: 6rem;
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 2.5rem);
+	background-color: red;
+}
+.characterImage{
+	width: 5rem;
+	height: 6rem;
+}
+
+.gameScore{
+	width: calc((22/100*60rem));
+	height: 33rem;
+	position: absolute;
+	border-left: 1px solid red;
+	right: 0;
+}
+.life{
+	width: 10rem;
+	height: 7rem;
+	position: absolute;
+	right: 1.5rem;
+	top: 5rem;
+	/*border: 1px solid green;*/
+}
+.lifeText{
+	width: 9rem;
+	height: 2.3rem;
+	position: absolute;
+	left: .2rem;
+	top: .4rem;
+	/*border: 1px solid green;*/
+	font-size: 1.5rem;
+	font-family: "Lucida Handwriting";
+
+}
+.lifeCount{
+	width: 9.5rem;
+	height: 3.6rem;
+	position: absolute;
+	left: .2rem;
+	top: 2.9rem;
+	/*border: 1px solid green;*/
+	font-size: 1.5rem;
+
+}
+
+#life1{
+	width: calc((9.5rem/3));
+	height: calc((9.5rem/3));
+	position: absolute;
+	/*border: 1px solid black;*/
+}
+#life2{
+	width: calc((9.5rem/3));
+	height: calc((9.5rem/3));
+	position: absolute;
+	left: calc((9.5rem/3));
+	/*border: 1px solid black;*/
+}#life3{
+	width: calc((9.5rem/3));
+	height: calc((9.5rem/3));
+	position: absolute;
+	left: calc((9.5rem/3*2));
+	/*border: 1px solid black;*/
+}
+.lifeImage{
+	width: calc((9.5rem/3));
+	height: calc((9.5rem/3));
+}
+.score{
+	width: 10rem;
+	height: 3rem;
+	position: absolute;
+	right: 1.5rem;
+	top: 13rem;
+	/*border: 1px solid green;*/
+}
+.scoreText{
+	width: 5.4rem;
+	height: 2.3rem;
+	position: absolute;
+	left: .2rem;
+	/*top: .4rem;*/
+	/*border: 1px solid green;*/
+	font-size: 1.5rem;
+	font-family: "Lucida Handwriting";	
+}
+.scoreValue{
+	width: 4.2rem;
+	height: 2.3rem;
+	position: absolute;
+	left: 5.6rem;
+	/*top: .4rem;*/
+	/*border: 1px solid green;*/
+	font-size: 1.5rem;
+	font-family: "Lucida Handwriting";
+}
+
+.level{
+	width: 10rem;
+	height: 2.5rem;
+	position: absolute;
+	right: 1.5rem;
+	top: 17rem;
+	/*border: 1px solid green;*/
+}
+.levelText{
+	width: 5.5rem;
+	height: 2.3rem;
+	position: absolute;
+	left: .2rem;
+	/*border: 1px solid green;*/
+	font-size: 1.5rem;
+	font-family: "Lucida Handwriting";
+}
+.levelValue{
+	width: 4.2rem;
+	height: 2.3rem;
+	position: absolute;
+	left: 5.7rem;
+	/*border: 1px solid green;*/
+	font-size: 1.5rem;
+	font-family: "Lucida Handwriting";	
+}
+
+.gameName{
+	width: 10rem;
+	height: 10rem;
+	position: absolute;
+	top: 21rem;
+	right: 1.5rem;
+	/*border: 1px solid green;*/
+	font-size: 3.5rem;
+	font-family: "Arial";
+}
+
